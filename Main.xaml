@@ -109,7 +109,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="743,581" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="743,699" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Result" />
       <Variable x:TypeArguments="x:String" Name="Nasa" />
@@ -146,6 +146,7 @@
         <InArgument x:TypeArguments="x:String">[ll]</InArgument>
       </Assign.Value>
     </Assign>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,118" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Hi&quot;]" />
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[ll]" />
     <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request (legacy)" EnableSSLVerification="True" EndPoint="https://api.nasa.gov/neo/rest/v1/feed?" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[Nasa]" TimeoutMS="6000">
       <ui:HttpClient.Attachments>
